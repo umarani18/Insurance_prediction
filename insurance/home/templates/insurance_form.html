@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Insurance Cost</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Insurance Predictor</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/predict/">Predict</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="predict-hero"><br>
+        <br><br>
+        <h1>Insurance Cost Prediction</h1>
+        <p>Enter your details below and get an estimated insurance cost instantly.</p>
+    </header>
+
+    <!-- Form Section -->
+    <section class="predict-container">
+        <div class="form-card">
+            <center><h2>Enter Your Details</h2></center><br>
+            <form id="predictionForm">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Predict</button>
+            </form>
+            <h2 id="result"></h2>
+        </div>
+    </section>
+
+</body>
+</html>
