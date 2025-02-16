@@ -23,7 +23,7 @@ This is a **Django-based web application** that predicts **insurance costs** usi
 ## Installation & Setup
 
 ### **Clone the Repository**
-- git clone https://github.com/your-username/insurance-prediction.git
+- git clone https://github.com/umarani18/insurance-prediction.git
 - cd insurance-prediction
 
 ### **Run the Django server**
